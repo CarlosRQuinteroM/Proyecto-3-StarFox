@@ -17,3 +17,34 @@
     width: 90vw;
     height: 90vh;
 }
+
+.logo{
+    display:initial;
+    position: relative;
+    background:transparent;
+    background-image: url(../img/Logo.png);
+    background-repeat: no-repeat;
+
+    top: -18em;
+    left: 4em;
+    width: 38vw;
+    height: 10vw;
+}
+
+.startBotton{
+    display:initial;
+    position: relative;
+    color: wheat;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+   left: -80em ;
+}
+
+.gifScreen{
+    display:flex;
+    position: absolute;
+    top: 14em;
+     width:60em;
+      height:33.5em
+}
