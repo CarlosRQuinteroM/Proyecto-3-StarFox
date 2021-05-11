@@ -15,4 +15,5 @@ function presionar() {
    var video=document.getElementById('video'); 
    video.play(); 
 } 
+
 window.addEventListener('load', iniciar, false); 
