@@ -24,7 +24,6 @@
     background:transparent;
     background-image: url(../img/Logo.png);
     background-repeat: no-repeat;
-
     top: -18em;
     left: 4em;
     width: 38vw;
@@ -32,19 +31,32 @@
 }
 
 .startBotton{
-    display:initial;
+    display:flex;
     position: relative;
-    color: wheat;
-    width: 10em;
-    height: 10em;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/botonStart.png);
+    background-color: transparent;
+    color: silver;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-repeat:no-repeat ;
+    border: none;
+    width: 12em;
+    height:12em;
     border-radius: 50%;
-   left: -80em ;
+    left: -80em ;
+}
+
+.startBotton:hover {
+    transform: scale(1.2);
+    transition:1s;
 }
 
 .gifScreen{
     display:flex;
     position: absolute;
+    background: none;
     top: 14em;
      width:60em;
-      height:33.5em
+     height:33.5em
 }
