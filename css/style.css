@@ -1,0 +1,19 @@
+* {
+   background-image:url(../img/planetas\ background.jpg);
+   margin: 0em;
+   padding: 0em;
+}
+
+.secVisible{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background:transparent;
+    border: 2px solid beige;
+    left: 7em;
+    top: 3em;
+    width: 90vw;
+    height: 90vh;
+}
