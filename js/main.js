@@ -38,3 +38,31 @@ window.addEventListener('load', iniciar, false, pausar);
          document.getElementById(_fase).style.display = "none";
      }
  };
+
+
+ // peliadores 
+ let team1 = [];
+ let team2= [];
+
+
+ const elegirPeliadores = (peliadores) => {
+
+    if (team2.length < 3 ) {
+        
+        if (team1.length < 3) {
+            team1.push(allPlayers[peliadores]);
+
+        } else {
+            
+            team2.push(allPlayers[peliadores]);
+
+            if (team2.length === 3) {
+                console.log("equipo1",team1)
+                console.log("equipo2",team2)
+                
+            }
+        }
+    }
+
+
+ }

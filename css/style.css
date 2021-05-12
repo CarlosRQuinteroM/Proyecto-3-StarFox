@@ -2,6 +2,8 @@
    background-image:url(../img/planetas\ background.jpg);
    margin: 0em;
    padding: 0em;
+   background-repeat: no-repeat;
+
 }
 
 .secVisible{
@@ -52,9 +54,9 @@
 }
 
 .gifScreen{
-    display:flex;
-    position: absolute;
-    background: none;
+     display:flex;
+     position: absolute;
+     background: none;
      top: 14em;
      width:60em;
      height:33.5em;
@@ -62,8 +64,8 @@
 }
 
 #video{
-    border-radius: 12em;
-    border: silver 0.4em solid;
+     border-radius: 12em;
+     border: silver 0.4em solid;
 }
 
 /* boton de skip */
@@ -79,3 +81,20 @@
 h1 {
     color: white;
 }
+
+
+.luchadores{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+ };
+ 
+.picFighter{
+    display:flex;
+    position:fixed;
+    width: 12em;
+    height: 12em;
+    transition: 0.5s;
+};
