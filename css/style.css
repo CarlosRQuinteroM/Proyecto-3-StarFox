@@ -78,23 +78,19 @@
    left: 15em;
 }
 
-h1 {
-    color: white;
-}
-
-
 .luchadores{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    background: none;
+    
+}
 
- };
- 
 .picFighter{
-    display:flex;
-    position:fixed;
+    position: relative;
     width: 12em;
-    height: 12em;
+    height: 19em;
+    border:transparent 3em  solid;
     transition: 0.5s;
-};
+    background: unset;
+}
