@@ -70,14 +70,12 @@ body {
 }
 
 /* boton de skip */
-
-
-/* section fase2 */
-
 #skipBtn{
     position: relative;
    left: 15em;
 }
+
+/* section fase2 */
 .luchadores{
     display:flex;
     position: relative;
@@ -86,9 +84,7 @@ body {
     top: 8em;
 }
 
-.avatar{
-    background-repeat:;
-}
+
 .picFighter{
     display: flex;
     position: relative;
