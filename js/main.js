@@ -45,23 +45,30 @@ window.addEventListener('load', iniciar, false, pausar);
  let team2= [];
 
 
- const elegirPeliadores = (peliadores) => {
+ const elegirPeliadores = (peleadores) => {
 
     if (team2.length < 3 ) {
         
         if (team1.length < 3) {
-            team1.push(allPlayers[peliadores]);
+            team1.push(allPlayers[peleadores]);
 
         } else {
             
-            team2.push(allPlayers[peliadores]);
+            team2.push(allPlayers[peleadores]);
 
             if (team2.length === 3) {
-                console.log("equipo1",team1)
-                console.log("equipo2",team2)
+                console.log("equipo1",team1);
+                console.log("equipo2",team2);
+                llenaEquipos();
+                cambiaFase("fase3");
+
+
                 
             }
         }
+        document.getElementById(peleadores).onclick = "";
+        document.getElementById(peleadores).className = "seleccionado";
+
     }
 
 
