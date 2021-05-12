@@ -73,7 +73,11 @@
 
 
 .skip{
+    display:flex;
+    position: absolute;
     width: 2em;
     height: 2em;
+    right: 20em;
+    color: white;
     background-color: red;
 }
