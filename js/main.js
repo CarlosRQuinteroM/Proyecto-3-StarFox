@@ -17,3 +17,5 @@ function presionar() {
 } 
 
 window.addEventListener('load', iniciar, false); 
+
+

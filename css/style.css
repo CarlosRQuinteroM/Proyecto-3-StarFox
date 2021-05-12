@@ -11,13 +11,12 @@
     justify-content: center;
     align-items: center;
     background:transparent;
-    border: 2px solid beige;
     left: 7em;
     top: 3em;
     width: 90vw;
     height: 90vh;
 }
-
+  /* secciocn fase1 */
 .logo{
     display:initial;
     position: relative;
@@ -56,7 +55,25 @@
     display:flex;
     position: absolute;
     background: none;
-    top: 14em;
+     top: 14em;
      width:60em;
-     height:33.5em
+     height:33.5em;
+     border-radius: 12em;
+}
+
+#video{
+    border-radius: 12em;
+    border: silver 0.4em solid;
+}
+
+/* boton de skip */
+
+
+/* section fase2 */
+
+
+.skip{
+    width: 2em;
+    height: 2em;
+    background-color: red;
 }
