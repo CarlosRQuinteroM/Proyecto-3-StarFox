@@ -12,20 +12,21 @@
     <section class="secVisible" id="fase1">
 
         <div class="logo" id="logoJuego"></div>
-           <input onClick="toggleGif()"  class="startBotton" id="boton" type="button"  value="start">
+
+        <input onClick="toggleGif()"  class="startBotton" id="boton" type="button"  value="start">
+
         <div class="gifScreen" id="gifScreen" style="visibility: hidden;" >
 
         <video id="video" src="/img/Star Fox 64 - Intro [1080p].mp4" ></div>
 
-        <div class="skip" id="botonSkip" >
-             <button type="button" value="skip" id="skipBtn"  onclick="cambiaFase('fase2')"></button>
-        </div>
+
+             <input type="button" value="NEXT" class="startBotton" id="skipBtn"  onclick=" pausar(); cambiaFase('fase2');" >
 
     </section>
 
     <!-- fase2 -->
     <section class="secvisible" id="fase2" style="display: none;">
-
+        <h1>fase2</h1>
         <div class="luchadores">
             <div class="avatar" id="1"></div>
             <div class="avatar" id="2"></div>

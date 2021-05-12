@@ -24,7 +24,7 @@
     background-image: url(../img/Logo.png);
     background-repeat: no-repeat;
     top: -18em;
-    left: 4em;
+    left: 14em;
     width: 38vw;
     height: 10vw;
 }
@@ -71,13 +71,11 @@
 
 /* section fase2 */
 
+#skipBtn{
+    position: relative;
+   left: 15em;
+}
 
-.skip{
-    display:flex;
-    position: absolute;
-    width: 2em;
-    height: 2em;
-    right: 20em;
+h1 {
     color: white;
-    background-color: red;
 }
