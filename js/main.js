@@ -28,21 +28,29 @@ window.addEventListener('load', iniciar, false, pausar);
 
 // funcion de cambiar de fase !
 
+let team1 = [];
+let team2= [];
+
+let p1 = "";
+let p2 = "";
+
+
+
+
  const cambiaFase = (destino) => {
-     let arrFase = ["fase1","fase2","fase3","fase4","fase5",];
+     let arrFase = ["fase1","fase2","fase3","fase4","fase5"];
 
      arrFase = arrFase.filter(val =>!destino.includes(val));
 
      document.getElementById(destino).style.display = "block";
-     for(let _fase of arrFase){
-         document.getElementById(_fase).style.display = "none";
-     }
+
+       for(let _fase of arrFase){
+        document.getElementById(_fase).style.display = "none";
+       };
  };
 
 
  // peleadores 
- let team1 = [];
- let team2= [];
 
 
  const elegirPeleadores = (peleadores) => {
@@ -61,6 +69,10 @@ window.addEventListener('load', iniciar, false, pausar);
                 console.log("equipo2",team2);
                 llenaEquipos();
                 cambiaFase("fase3");
+
+                setTimeout(() => {
+                    cambiaFase("fase4");
+                }, 5000);
 
 
                 
