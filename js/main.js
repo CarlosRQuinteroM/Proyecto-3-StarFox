@@ -40,12 +40,12 @@ window.addEventListener('load', iniciar, false, pausar);
  };
 
 
- // peliadores 
+ // peleadores 
  let team1 = [];
  let team2= [];
 
 
- const elegirPeliadores = (peleadores) => {
+ const elegirPeleadores = (peleadores) => {
 
     if (team2.length < 3 ) {
         
