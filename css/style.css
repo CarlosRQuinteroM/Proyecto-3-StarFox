@@ -110,13 +110,20 @@ body {
     height: 15em;
 }
 .fotoNave{
-    width: 30em;
-    height: 30em;
+    display: flex;
+    position: relative;
+    width: 20em;
+    height: 20em;
+    left: 55em;
+}
+.fotoNave:hover{
+    transition: 1s;
+    transform: rotate(360deg) scale(2);
+
 }
 .teamCharacters{
     display: flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
-
 }
