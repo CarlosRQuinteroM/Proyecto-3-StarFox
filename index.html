@@ -10,6 +10,7 @@
 <body>
 
     <section class="secVisible" id="fase1">
+        <p>fase1</p>
             <!-- fase1 -->
 
         <div class="logo" id="logoJuego"></div>
@@ -27,6 +28,7 @@
 
 
     <section class="secVisible" id="fase2" style="display: none;">
+       
             <!-- fase2 -->
         <div class="luchadores">
             <div class="avatar" id="1" onclick="elegirPeleadores(1)"><img class="picFighter" src="/img/falco.png"></div>
@@ -36,7 +38,7 @@
             <div class="avatar" id="5" onclick="elegirPeleadores(5)"><img class="picFighter" src="/img/wolf.png"></div>
             <div class="avatar" id="6" onclick="elegirPeleadores(6)"><img class="picFighter" src="/img/panther.png"></div>
         </div>
-           <h1 class="eligePeleadores">Choose the fighters</h1>
+           <h1 class="eligePeleadores">Choose the fighters fase2 </h1>
 
     </section>
 
@@ -50,12 +52,19 @@
 
     <section class="secVisible" id="fase4" style="display: none;">
            <!-- fase4 -->
-        <div class="maquetaEquipos" id="equipos"></div>
+           <p>fase4</p>  
+        <div id="round0">
+            <button onClick="startFight(0)">START FIGHT</button>
+        </div>
     </section>
 
      <section class="secVisible" id="fase5" style="display: none;">
        <!-- fase5 -->
-     <div class="maquetaEquipos" id="equipos"></div>
+        <p>fase5</p>  
+        <div id="round1">
+            <button onClick="startFight(1)">START FIGHT</button>
+        </div>
+    </section>
      </section>
 
 

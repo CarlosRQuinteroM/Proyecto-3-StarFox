@@ -1,6 +1,6 @@
 class Peleadores{
 
-    constructor(nombre,ataque,defensa,tecnica,velocidad){
+    constructor(nombre,ataque,defensa,tecnica,velocidad, fotoUrl){
         this.vida = 300;
         this.suerte = Math.floor(Math.random() *11);
         this.nombre = nombre;
@@ -8,6 +8,7 @@ class Peleadores{
         this.defensa = defensa;
         this.tecnica = tecnica;
         this.velocidad = velocidad;
+        this.foto = fotoUrl
     }
 
 
@@ -23,12 +24,12 @@ class Peleadores{
 
 
 //Instancio luchadores
-let player1 = new Peleadores("falco",30,10,5,20);
-let player2 = new Peleadores("fox",35,12,8,12);
-let player3 = new Peleadores("lylat",25,20,7,15);
-let player4 = new Peleadores("peppy",40,8,8,18);
-let player5 = new Peleadores("wolf",40,8,8,18);
-let player6 = new Peleadores("panther",40,8,8,18);
+let player1 = new Peleadores("falco",40,12,5,20, "/img/falco.png");
+let player2 = new Peleadores("fox",45,12,12,12, "/img/fox.png");
+let player3 = new Peleadores("lylat",45,12,7,15, "/img/lylat.png");
+let player4 = new Peleadores("peppy",40,12,8,18, "/img/Peppy.png");
+let player5 = new Peleadores("wolf",40,8,12,18, "/img/wolf.png");
+let player6 = new Peleadores("panther",40,12,8,18, "/img/panther.png");
 
 
 let allPlayers = {
