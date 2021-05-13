@@ -38,6 +38,9 @@ let p2 = "";
 
 
  const cambiaFase = (destino) => {
+     if (destino == 'fase2') {
+         pausar()
+     }
      let arrFase = ["fase1","fase2","fase3","fase4","fase5"];
 
      arrFase = arrFase.filter(val =>!destino.includes(val));
@@ -45,6 +48,7 @@ let p2 = "";
      document.getElementById(destino).style.display = "block";
 
        for(let _fase of arrFase){
+           console.log('estofunciona?')
         document.getElementById(_fase).style.display = "none";
        };
  };
@@ -64,9 +68,11 @@ let p2 = "";
             
             team2.push(allPlayers[peleadores]);
 
-            if (team2.length === 3) {
-                console.log("equipo1",team1);
-                console.log("equipo2",team2);
+            if (team2.length == 3) {
+                console.log("ESTE ES EL TEAM1 ", team1);
+                console.log("ESTE ES EL TEAM2 ", team2);
+            
+                
                 llenaEquipos();
                 cambiaFase("fase3");
 
@@ -84,4 +90,23 @@ let p2 = "";
     }
 
 
- }
+ };
+
+
+ const llenaEquipos = () => {
+    let equipos = document.getElementById("equipos");
+
+    equipos.innerHTML = `
+    <div class="teamCharacters">
+        <div><img class="picFighter" src="img/${team1[0].nombre}.png" alt="luchador1"></div>
+        <div><img class="picFighter" src="img/${team1[1].nombre}.png" alt="luchador4"></div>
+        <div><img class="picFighter" src="img/${team1[2].nombre}.png" alt="luchador6"></div>
+    </div>
+        <div class="navePanel"><img class="fotoNave" src="img/naveEspacial.png" alt="nave"></div>
+    <div class="teamCharacters">
+         <div><img class="picFighter" src="img/${team2[0].nombre}.png" alt="luchador3"></div>
+         <div><img class="picFighter" src="img/${team2[1].nombre}.png" alt="luchador2"></div>
+         <div><img class="picFighter" src="img/${team2[2].nombre}.png" alt="luchador5"></div>
+     </div>
+    `;
+};

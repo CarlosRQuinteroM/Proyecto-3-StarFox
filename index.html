@@ -8,8 +8,9 @@
     <title>Proyecto # 3</title>
 </head>
 <body>
-    <!-- fase1 -->
+
     <section class="secVisible" id="fase1">
+            <!-- fase1 -->
 
         <div class="logo" id="logoJuego"></div>
 
@@ -20,12 +21,13 @@
         <video id="video" src="/img/Star Fox 64 - Intro [1080p].mp4" ></div>
 
 
-             <input type="button" value="NEXT" class="startBotton" id="skipBtn"  onclick=" pausar(); cambiaFase('fase2');" >
+             <input type="button" value="NEXT" class="startBotton" id="skipBtn" onclick="cambiaFase('fase2');" >
 
     </section>
 
-    <!-- fase2 -->
+
     <section class="secVisible" id="fase2" style="display: none;">
+            <!-- fase2 -->
         <div class="luchadores">
             <div class="avatar" id="1" onclick="elegirPeleadores(1)"><img class="picFighter" src="/img/falco.png"></div>
             <div class="avatar" id="2" onclick="elegirPeleadores(2)"><img class="picFighter" src="/img/fox.png"></div>
@@ -37,12 +39,14 @@
            <h1 class="eligePeleadores">Choose the fighters</h1>
 
     </section>
-    <!-- fase3 -->
-    <section>
 
+    <section class="secVisible" id="fase2" style="display: none;">
+            <!-- fase3 -->
+            <div class="maquetaEquipos" id="equipos"></div>
 
-     
     </section>
+
+
     <!-- fase4 -->
 
 

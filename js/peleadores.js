@@ -1,4 +1,4 @@
-class Fighter{
+class Peleadores{
 
     constructor(nombre,ataque,defensa,tecnica,velocidad){
         this.vida = 300;
@@ -23,12 +23,12 @@ class Fighter{
 
 
 //Instancio luchadores
-let player1 = new Fighter("falco",30,10,5,20);
-let player2 = new Fighter("fox",35,12,8,12);
-let player3 = new Fighter("lylat",25,20,7,15);
-let player4 = new Fighter("peppy",40,8,8,18);
-let player5 = new Fighter("wolf",40,8,8,18);
-let player6 = new Fighter("panther",40,8,8,18);
+let player1 = new Peleadores("falco",30,10,5,20);
+let player2 = new Peleadores("fox",35,12,8,12);
+let player3 = new Peleadores("lylat",25,20,7,15);
+let player4 = new Peleadores("peppy",40,8,8,18);
+let player5 = new Peleadores("wolf",40,8,8,18);
+let player6 = new Peleadores("panther",40,8,8,18);
 
 
 let allPlayers = {
