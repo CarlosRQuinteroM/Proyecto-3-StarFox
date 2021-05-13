@@ -38,6 +38,7 @@ let p2 = "";
 
 
  const cambiaFase = (destino) => {
+     console.log(destino);
      if (destino == 'fase2') {
          pausar()
      }
@@ -48,7 +49,7 @@ let p2 = "";
      document.getElementById(destino).style.display = "block";
 
        for(let _fase of arrFase){
-           console.log('estofunciona?')
+        
         document.getElementById(_fase).style.display = "none";
        };
  };
