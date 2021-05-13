@@ -3,7 +3,7 @@ body {
    margin: 0em;
    padding: 0em;
    background-repeat: no-repeat;
-   overflow: hidden;
+
 
 }
 
@@ -103,4 +103,20 @@ body {
     left: 10em;
     font-size: 4em;
     color: rgb(238, 238, 238);
+}
+
+.navePanel{
+    width: 15em;
+    height: 15em;
+}
+.fotoNave{
+    width: 30em;
+    height: 30em;
+}
+.teamCharacters{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
 }

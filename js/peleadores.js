@@ -37,5 +37,5 @@ let allPlayers = {
     "3" : player3,
     "4" : player4,
     "5" : player5,
-    "6" : player6,
+    "6" : player6
 };

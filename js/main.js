@@ -29,7 +29,7 @@ window.addEventListener('load', iniciar, false, pausar);
 // funcion de cambiar de fase !
 
 let team1 = [];
-let team2= [];
+let team2 = [];
 
 let p1 = "";
 let p2 = "";
@@ -72,14 +72,13 @@ let p2 = "";
             if (team2.length == 3) {
                 console.log("ESTE ES EL TEAM1 ", team1);
                 console.log("ESTE ES EL TEAM2 ", team2);
-            
-                
+
                 llenaEquipos();
                 cambiaFase("fase3");
 
-                setTimeout(() => {
-                    cambiaFase("fase4");
-                }, 5000);
+                // setTimeout(() => {
+                //     cambiaFase("fase4");
+                // }, 5000);
 
 
                 
@@ -91,7 +90,7 @@ let p2 = "";
     }
 
 
- };
+ }
 
 
  const llenaEquipos = () => {
@@ -99,15 +98,17 @@ let p2 = "";
 
     equipos.innerHTML = `
     <div class="teamCharacters">
-        <div><img class="picFighter" src="img/${team1[0].nombre}.png" alt="luchador1"></div>
-        <div><img class="picFighter" src="img/${team1[1].nombre}.png" alt="luchador4"></div>
-        <div><img class="picFighter" src="img/${team1[2].nombre}.png" alt="luchador6"></div>
-    </div>
-        <div class="navePanel"><img class="fotoNave" src="img/naveEspacial.png" alt="nave"></div>
-    <div class="teamCharacters">
-         <div><img class="picFighter" src="img/${team2[0].nombre}.png" alt="luchador3"></div>
-         <div><img class="picFighter" src="img/${team2[1].nombre}.png" alt="luchador2"></div>
-         <div><img class="picFighter" src="img/${team2[2].nombre}.png" alt="luchador5"></div>
-     </div>
+    <div><img class="picFighter" src="img/${team1[0].nombre}.png" alt="luchador1"></div>
+    <div><img class="picFighter" src="img/${team1[1].nombre}.png" alt="luchador4"></div>
+    <div><img class="picFighter" src="img/${team1[2].nombre}.png" alt="luchador6"></div>
+</div>
+
+    <div class="navePanel"><img class="fotoNave" src="img/naveEspacial.png" alt="nave"></div>
+
+<div class="teamCharacters">
+     <div><img class="picFighter" src="img/${team2[0].nombre}.png" alt="luchador3"></div>
+     <div><img class="picFighter" src="img/${team2[1].nombre}.png" alt="luchador2"></div>
+     <div><img class="picFighter" src="img/${team2[2].nombre}.png" alt="luchador5"></div>
+ </div>
     `;
 };
