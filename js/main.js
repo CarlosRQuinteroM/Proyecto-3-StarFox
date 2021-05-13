@@ -44,7 +44,7 @@ let p2 = "";
      }
      
 
-     let arrFase = ["fase1","fase2","fase3","fase4","fase5"];
+     let arrFase = ["fase1","fase2","fase3","fase4","fase5","fase6","fase7",];
 
      arrFase = arrFase.filter(val =>!destino.includes(val));
 
@@ -148,12 +148,27 @@ const fighting = (round) => {
         let victor
 
         p1.vida > p2.vida ? victor = p1 : victor = p2
+
            console.log("AND THE WINNER IS ", victor.nombre);
+
             const versus1 = document.getElementById("round" + round)
+
+            let nextFase;
+
+            if (round === 0) {
+                nextFase = 4;
+            } else if (round === 1 ) {
+                nextFase = 5;
+            } else {
+                nextFase = 6;
+            }
+
            versus1.innerHTML = `
            <div class="teamCharacters">
                <div class="containerWinner" id="winnerName">You Win!</div>
+               <div class="navePanel"  ><img onclick="cambiaFase('fase5')" class="fotoNave" src="img/naveEspacial.png" alt="nave"></div>
                <div><img class="winner" src="${victor.foto}" alt="luchador2"></div>
+               </div>
            </div>
            `
        }
