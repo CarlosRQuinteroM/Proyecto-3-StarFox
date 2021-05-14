@@ -130,13 +130,14 @@ const startFight = (round) => {
  
     let versus1 = document.getElementById("round" + round);
          versus1.innerHTML=`
-         <div class="teamCharacters">
-         <div><img class="picFighter" src="img/${p1.nombre}.png" alt="luchador1"></div>
-         </div>
-         <div class="navePanel" onclick="fighting(${round})" ><img class="fotoNave" src="img/naveEspacial.png" alt="nave"></div>
-         </div>
-         <div class="teamCharacters">
-           <div><img class="picFighter" src="img/${p2.nombre}.png" alt="luchador3"></div>
+         <div class="teamHorizontal">
+             <div class="teamCharacters ">
+                   <div><img class="picFighter" src="img/${p1.nombre}.png" alt="luchador1"></div>
+                </div>
+                  <div class="navePanel" onclick="fighting(${round})" ><img class="fotoNave" src="img/naveEspacial.png" alt="nave"></div>
+               <div class="teamCharacters">
+                  <div><img class="picFighter" src="img/${p2.nombre}.png" alt="luchador2"></div>
+                </div>
          </div>
          `;
 }
