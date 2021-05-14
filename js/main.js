@@ -9,7 +9,6 @@ function toggleGif() {
 };
 
 
-
 function iniciar() { 
    var boton=document.getElementById('boton'); 
    boton.addEventListener('click', presionar, false); 
@@ -131,11 +130,16 @@ const startFight = (round) => {
     let versus1 = document.getElementById("round" + round);
          versus1.innerHTML=`
          <div class="teamHorizontal">
-             <div class="teamCharacters ">
+
+                 <div class="navePanel" onclick="fighting(${round})" ><img class="fotoNave" id="naveVersus" src="img/naveEspacial.png" alt="nave"></div>
+
+
+                <div class="teamCharacters ">
                    <div><img class="picFighter" src="img/${p1.nombre}.png" alt="luchador1"></div>
                 </div>
-                  <div class="navePanel" onclick="fighting(${round})" ><img class="fotoNave" src="img/naveEspacial.png" alt="nave"></div>
-               <div class="teamCharacters">
+                <div class="versus"><img id="versus" src="img/Vs.png" alt="Vs"></div>
+                  
+                <div class="teamCharacters">
                   <div><img class="picFighter" src="img/${p2.nombre}.png" alt="luchador2"></div>
                 </div>
          </div>

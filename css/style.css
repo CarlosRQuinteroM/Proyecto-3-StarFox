@@ -130,30 +130,32 @@ body {
     justify-content: center;
     align-items: center;
     pointer-events:none;
+    left: 10em
 };
 
 p{
     z-index: 2;
     color: rgb(255, 255, 255);
 }
-
-
-
 .teamHorizontal{
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-
+    left: -18em
 }
-
-
-
-
 .winner{ 
     position: relative;
     left: -30em;
     width: 12em;
 }
 
+#versus{
+    width: 10em;
+    height: 10em;
+}
+
+#naveVersus{
+    left: 70em;
+}
