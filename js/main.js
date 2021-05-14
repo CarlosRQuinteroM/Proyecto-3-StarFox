@@ -34,6 +34,9 @@ let team2 = [];
 let p1 = "";
 let p2 = "";
 
+let p3 = "";
+let p4 = "";
+
 
 
 
@@ -44,7 +47,7 @@ let p2 = "";
      }
      
 
-     let arrFase = ["fase1","fase2","fase3","fase4","fase5","fase6","fase7",];
+     let arrFase = ["fase1","fase2","fase3","fase4","fase5","fase6","fase7"];
 
      arrFase = arrFase.filter(val =>!destino.includes(val));
 
@@ -79,10 +82,10 @@ let p2 = "";
                 cambiaFase("fase3");
 
                 setTimeout(() => {
-                    fighting();
+                    
                     cambiaFase("fase4");
                 }, 5000);
-
+                fighting();
                
             }
         }
@@ -121,6 +124,9 @@ let p2 = "";
 const startFight = (round) => {
     p1 = team1[round];
     p2 = team2[round];
+
+    p3 = team1[round];
+    p4 = team2[round];
  
     let versus1 = document.getElementById("round" + round);
          versus1.innerHTML=`
@@ -139,37 +145,47 @@ const fighting = (round) => {
     p1 = team1[round];
     p2 = team2[round];
 
+    p3 = team1[round];
+    p4 = team2[round];
+
     p1.hit(p2);
     p2.hit(p1);
 
-    console.log(`Player one life ${p1.vida} and player two life ${p2.vida}`)
+    console.log(`Vida del jugador ${p1.nombre}${p1.vida} Vida del Jugador ${p2.nombre} ${p2.vida}`)
     
-    if(p1.vida <= 0 || p2.vida <= 0) {
-        let victor
+    if(p1.vida <= 0 || p2.vida <= 0 ) {
+
+        let victor;
+        let victor2;
+  
 
         p1.vida > p2.vida ? victor = p1 : victor = p2
 
-           console.log("AND THE WINNER IS ", victor.nombre);
+        p3.vida > p4.vida ? victor2 = p3 : victor2 = p4
 
-            const versus1 = document.getElementById("round" + round)
+           console.log("AND THE WINNER IS ", victor2.nombre , victor.nombre);
+
+            const versus1 = document.getElementById("round"+round);
 
             let nextFase;
-
             if (round === 0) {
                 nextFase = 4;
             } else if (round === 1 ) {
                 nextFase = 5;
-            } else {
-                nextFase = 6;
+            } else if (round === 2) {
+                nextFase = 6
+            }else  {
+                nextFase = 7;
             }
 
            versus1.innerHTML = `
            <div class="teamCharacters">
                <div class="containerWinner" id="winnerName">You Win!</div>
-               <div class="navePanel"  ><img onclick="cambiaFase('fase5')" class="fotoNave" src="img/naveEspacial.png" alt="nave"></div>
+
                <div><img class="winner" src="${victor.foto}" alt="luchador2"></div>
                </div>
            </div>
            `
        }
+      
 }
