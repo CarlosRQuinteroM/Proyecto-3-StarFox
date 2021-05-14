@@ -185,10 +185,13 @@ const fighting = (round) => {
 
            versus1.innerHTML = `
            <div class="teamCharacters">
-               <div class="containerWinner" id="winnerName">You Win!</div>
-
+               <div class="containerWinner" id="winnerName"></div>
+      
                <div><img class="winner" src="${victor.foto}" alt="luchador2"></div>
+               <div><img id="logoWinner" class=logoWinner src="img/winner.png" alt="winner"></div>
+               
                </div>
+
            </div>
            `
        }

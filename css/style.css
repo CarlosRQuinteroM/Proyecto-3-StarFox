@@ -147,7 +147,7 @@ p{
 }
 .winner{ 
     position: relative;
-    left: -30em;
+    left: -15em;
     width: 12em;
 }
 
@@ -158,4 +158,9 @@ p{
 
 #naveVersus{
     left: 70em;
+}
+
+#logoWinner{
+    width: 24em;
+    height: 15em;
 }
