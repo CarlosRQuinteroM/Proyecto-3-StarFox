@@ -12,3 +12,61 @@
 * Bootstrap.   <img src="https://tiposdeide.files.wordpress.com/2018/10/bootstrap-stack.png?w=768" width="30">
 
 * Netlify.   <img src="https://camo.githubusercontent.com/c8a3dd0309eabdf69cf932a8450e2711307502a47703c54024f4678c41d497ba/68747470733a2f2f7777772e6e65746c6966792e636f6d2f696d672f70726573732f6c6f676f732f6c6f676f6d61726b2e706e67" width="30">
+***
+# Details
+>One of the most important aspects in my opinion of this project was the class constructors, then I leave the code so that we can see them in more details.
+~~~
+class Peleadores{
+
+    constructor(nombre,ataque,defensa,tecnica,velocidad, fotoUrl){
+        this.vida = 800;
+        this.suerte = Math.floor(Math.random() *21);
+        this.nombre = nombre;
+        this.ataque = ataque;
+        this.defensa = defensa;
+        this.tecnica = tecnica;
+        this.velocidad = velocidad;
+        this.foto = fotoUrl
+    }
+
+
+    hit(enemy){
+        enemy.vida -= this.ataque - (enemy.defensa * (enemy.suerte / this.velocidad));
+    }
+
+    
+    specialHit(enemy){
+        enemy.vida -= this.ataque + this.tecnica - (enemy.defensa * (enemy.suerte / this.velocidad));
+    }
+}
+~~~
+>
+
+***
+## Characters
+### Next we have the iconic characters of this video game.
+
+ >Fox McCloud 
+<img src="https://github.com/CarlosRQuinteroM/Proyecto-3-StarFox/blob/master/img/fox.png?raw=true" width="30">
+
+>Slippy Toad <img src="https://static.wikia.nocookie.net/nintendo/images/a/a5/Slippy_Toad_-_Star_Fox_Zero.png/revision/latest?cb=20190623233755&path-prefix=es" width="40">
+
+>Peppy Hare <img src="https://github.com/CarlosRQuinteroM/Proyecto-3-StarFox/blob/master/img/Peppy.png?raw=true" width="40">
+
+>Falco Lombardi <img src="https://github.com/CarlosRQuinteroM/Proyecto-3-StarFox/blob/master/img/falco.png?raw=true" width="40">
+
+>Panther Caroso <img src="https://github.com/CarlosRQuinteroM/Proyecto-3-StarFox/blob/master/img/panther.png?raw=true" width="40">
+
+>Wolf O'Donnell <img src="https://github.com/CarlosRQuinteroM/Proyecto-3-StarFox/blob/master/img/wolf.png?raw=true" width="40">
+
+***
+
+# ***LET'S PLAY!!!***
+
+[Click here to play Star Fox](https://goofy-mayer-5f3310.netlify.app/)
+
+*** 
+## Other projects 
+ * [Here's the link to my other repositories.](https://github.com/CarlosRQuinteroM?tab=repositories)
+
+<a href="https://github.com/CarlosRQuinteroM"  target="_blank" > <img src="https://avatars.githubusercontent.com/u/71967401?v=4" width="150" > </a>
