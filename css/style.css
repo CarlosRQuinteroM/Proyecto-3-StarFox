@@ -39,7 +39,7 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/botonStart.png);
+    background-image: url(../img/botonStart.png);
     background-color: transparent;
     color: silver;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

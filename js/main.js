@@ -46,7 +46,7 @@ let p4 = "";
      }
      
 
-     let arrFase = ["fase1","fase2","fase3","fase4","fase5","fase6","fase7"];
+     let arrFase = ["fase1","fase2","fase3","fase4","fase5",];
 
      arrFase = arrFase.filter(val =>!destino.includes(val));
 
@@ -64,6 +64,9 @@ let p4 = "";
 
  const elegirPeleadores = (peleadores) => {
 
+
+    
+
     if (team2.length < 3 ) {
         
         if (team1.length < 3) {
@@ -74,8 +77,6 @@ let p4 = "";
             team2.push(allPlayers[peleadores]);
 
             if (team2.length == 3) {
-                console.log("ESTE ES EL TEAM1 ", team1);
-                console.log("ESTE ES EL TEAM2 ", team2);
 
                 llenaEquipos();
                 cambiaFase("fase3");
@@ -83,7 +84,7 @@ let p4 = "";
                 setTimeout(() => {
                     
                     cambiaFase("fase4");
-                }, 5000);
+                }, 20000);
                 fighting();
                
             }
