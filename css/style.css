@@ -157,7 +157,7 @@ p{
 }
 
 #naveVersus{
-    left: 70em;
+    left: 80em;
 }
 
 #logoWinner{
@@ -171,4 +171,16 @@ p{
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
+}
+
+p {
+    color: white;
+}
+.progress{
+    display: flex;
+
+    width: 20em;
+}
+.bg-danger{
+    background-color: silver;
 }

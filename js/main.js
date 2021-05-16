@@ -123,6 +123,9 @@ const startFight = (round) => {
 
     p3 = team1[round];
     p4 = team2[round];
+
+    p1Percent = (p1.vida * 100) / 300
+    p2Percent = (p2.vida * 100) / 300
  
     let versus1 = document.getElementById("round" + round);
          versus1.innerHTML=`
@@ -133,12 +136,30 @@ const startFight = (round) => {
 
                 <div class="teamCharacters ">
                    <div><img class="picFighter" src="img/${p1.nombre}.png" alt="luchador1"></div>
+                    <div id="${p1.nombre}vida" >
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width:100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        
+                    </div>
+                    </div>
+                    <p>${p1.vida}</p>
                 </div>
+                
+
                 <div class="versus"><img id="versus" src="img/Vs.png" alt="Vs"></div>
                   
                 <div class="teamCharacters">
                   <div><img class="picFighter" src="img/${p2.nombre}.png" alt="luchador2"></div>
-                </div>
+                  <div id="${p2.nombre}vida">
+
+                   <div class="progress">
+                   <div class="progress-bar " role="progressbar" style="width:100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        
+                        </div>
+                     </div>
+                     <p>${p2.vida}</p>
+                 </div>
+                 
          </div>
          `;
 }
@@ -149,11 +170,13 @@ const fighting = (round) => {
 
     p3 = team1[round];
     p4 = team2[round];
-
+    
     p1.hit(p2);
+    updateLife(p2);
+    
     p2.hit(p1);
+    updateLife(p1);
 
-    console.log(`Vida del jugador ${p1.nombre}${p1.vida} Vida del Jugador ${p2.nombre} ${p2.vida}`)
     
     if(p1.vida <= 0 || p2.vida <= 0 ) {
 
@@ -193,4 +216,17 @@ const fighting = (round) => {
            `
        }
       
+}
+
+const updateLife = (player) => {
+    let life = Math.floor(player.vida)
+    let playerPercent = (player.vida * 100) / 300
+    const p2Life = document.getElementById(`${player.nombre}vida`);
+    p2Life.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" id="progress" role="progressbar" style="width: ${playerPercent}%" aria-valuenow="${player.vida}" aria-valuemin="0" aria-valuemax="300"></div>
+                        </div>
+                    </div>
+                    <p>${life}</p>
+                `
 }
