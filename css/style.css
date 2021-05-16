@@ -164,3 +164,10 @@ p{
     width: 24em;
     height: 15em;
 }
+
+.seleccionado {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}

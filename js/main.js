@@ -64,14 +64,10 @@ let p4 = "";
 
  const elegirPeleadores = (peleadores) => {
 
-
-    
-
     if (team2.length < 3 ) {
         
         if (team1.length < 3) {
             team1.push(allPlayers[peleadores]);
-
         } else {
             
             team2.push(allPlayers[peleadores]);
