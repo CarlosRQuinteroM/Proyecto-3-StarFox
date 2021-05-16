@@ -1,8 +1,8 @@
 class Peleadores{
 
     constructor(nombre,ataque,defensa,tecnica,velocidad, fotoUrl){
-        this.vida = 300;
-        this.suerte = Math.floor(Math.random() *11);
+        this.vida = 800;
+        this.suerte = Math.floor(Math.random() *21);
         this.nombre = nombre;
         this.ataque = ataque;
         this.defensa = defensa;

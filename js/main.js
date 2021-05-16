@@ -220,11 +220,11 @@ const fighting = (round) => {
 
 const updateLife = (player) => {
     let life = Math.floor(player.vida)
-    let playerPercent = (player.vida * 100) / 300
+    let playerPercent = (player.vida * 100) / 800
     const p2Life = document.getElementById(`${player.nombre}vida`);
     p2Life.innerHTML = `
                     <div class="progress">
-                        <div class="progress-bar bg-danger" id="progress" role="progressbar" style="width: ${playerPercent}%" aria-valuenow="${player.vida}" aria-valuemin="0" aria-valuemax="300"></div>
+                        <div class="progress-bar bg-danger" id="progress" role="progressbar" style="width: ${playerPercent}%" aria-valuenow="${player.vida}" aria-valuemin="0" aria-valuemax="800"></div>
                         </div>
                     </div>
                     <p>${life}</p>
