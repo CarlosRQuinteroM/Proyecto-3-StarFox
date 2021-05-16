@@ -93,8 +93,8 @@ body {
 .picFighter{
     display: flex;
     position: relative;
-    width: 12em;
-    height: 19em;
+    width: 20em;
+    height: 30em;
     border:transparent 3em  solid;
 }
 
@@ -160,7 +160,9 @@ p{
 }
 
 #naveVersus{
-    left: 80em;
+    left: 110em;
+    width: 10em;
+    height: 10em;
 }
 
 #logoWinner{
