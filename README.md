@@ -28,15 +28,12 @@ class Peleadores{
         this.velocidad = velocidad;
         this.foto = fotoUrl
     }
-
-
     hit(enemy){
         enemy.vida -= this.ataque - (enemy.defensa * (enemy.suerte / this.velocidad));
     }
-
-    
     specialHit(enemy){
-        enemy.vida -= this.ataque + this.tecnica - (enemy.defensa * (enemy.suerte / this.velocidad));
+        enemy.vida -= this.ataque + this.tecnica - (enemy.defensa 
+        * (enemy.suerte / this.velocidad));
     }
 }
 ~~~
