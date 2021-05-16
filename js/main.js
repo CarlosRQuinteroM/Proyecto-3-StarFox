@@ -106,7 +106,7 @@ let p4 = "";
 
     <div class="navePanel" onclick="cambiaFase('fase4')" ><img class="fotoNave" src="img/naveEspacial.png" alt="nave">
     <h1 id="tituloNave"  style="color: rgb(255, 255, 255);left: 30em; display: flex; position: absolute;
-    top: 10em; font-size: 3em;">Click on the ship to  fase3 continue.</h1></div>
+    top: 10em; font-size: 3em;">Click on the ship to continue.</h1></div>
 
 
 <div class="teamCharacters">
