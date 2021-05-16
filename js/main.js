@@ -217,6 +217,7 @@ const fighting = (round) => {
            
            `
        }
+       
       
 }
 
@@ -231,4 +232,5 @@ const updateLife = (player) => {
                     </div>
                     <p>${life}</p>
                 `
+                
 }
