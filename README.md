@@ -43,8 +43,7 @@ class Peleadores{
 ## Characters
 ### Next we have the iconic characters of this video game.
 
- >Fox McCloud 
-<img src="https://github.com/CarlosRQuinteroM/Proyecto-3-StarFox/blob/master/img/fox.png?raw=true" width="30">
+ >Fox McCloud <img src="https://github.com/CarlosRQuinteroM/Proyecto-3-StarFox/blob/master/img/fox.png?raw=true" width="30">
 
 >Slippy Toad <img src="https://static.wikia.nocookie.net/nintendo/images/a/a5/Slippy_Toad_-_Star_Fox_Zero.png/revision/latest?cb=20190623233755&path-prefix=es" width="40">
 
